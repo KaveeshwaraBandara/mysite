@@ -1,0 +1,13 @@
+# Virtual environment — regenerable, machine-specific
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Environment variables / secrets (we'll use this later)
+.env
+
+# Editor and OS noise
+.vscode/
+.DS_Store
