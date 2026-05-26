@@ -11,3 +11,4 @@ __pycache__/
 # Editor and OS noise
 .vscode/
 .DS_Store
+app.db
