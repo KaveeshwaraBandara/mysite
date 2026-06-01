@@ -1,0 +1,11 @@
+# Same logic as .gitignore plus a few extras
+venv/
+__pycache__/
+*.pyc
+.env
+.env.example
+app.db
+.git/
+.gitignore
+README.md
+frontend/
