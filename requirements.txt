@@ -89,6 +89,7 @@ pal-statistics==2.7.0
 pal-statistics-msgs==2.7.0
 pcl-msgs==1.0.0
 pendulum-msgs==0.33.9
+psycopg2-binary==2.9.12
 pydantic==2.13.4
 pydantic-extra-types==2.11.1
 pydantic-settings==2.14.1
