@@ -1,7 +1,7 @@
-// const API_URL = "https://bandaragamik-mysite-backend.hf.space";
+const API_URL = "https://bandaragamik-mysite-backend.hf.space";
 
 
-const API_URL = "http://127.0.0.1:8000";
+// const API_URL = "http://127.0.0.1:8000";
 const TOKEN_KEY = "auth_token";
 
 const authStatus = document.getElementById("auth-status");
