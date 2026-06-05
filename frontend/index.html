@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Guestbook</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Guestbook</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <main>
-        <h1>My Guestbook</h1>
-        <p>Leave a message and it'll apear below</p>
+  <main>
+    <header id="auth-header">
+      <span id="auth-status">Not logged in</span>
+      <button id="logout-button" hidden>Log out</button>
+    </header>
 
-        <form id="message-form">
-            <label for="name">Your name</label>
-            <input type="text" id="name" name="name" required />
+    <h1>My Guestbook</h1>
 
+    <section id="auth-section">
+      <h2>Sign up</h2>
+      <form id="signup-form">
+        <label for="signup-username">Username</label>
+        <input type="text" id="signup-username" required />
 
-            <label for="content">Message</label>
-            <textarea id="content" name="content" required></textarea>
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" required minlength="6" />
 
+        <button type="submit">Create account</button>
+      </form>
 
-            <button type="submit">Post message</button>
-        </form>
+      <h2>Log in</h2>
+      <form id="login-form">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" required />
 
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required />
 
-        <h2>Message</h2>
-        <ul id="messages"></ul>
-    </main>
+        <button type="submit">Log in</button>
+      </form>
+    </section>
 
+    <section id="post-section" hidden>
+      <h2>Leave a message</h2>
+      <form id="message-form">
+        <label for="content">Message</label>
+        <textarea id="content" required></textarea>
+        <button type="submit">Post message</button>
+      </form>
+    </section>
 
-    <script src="app.js"></script>
+    <h2>Messages</h2>
+    <ul id="messages"></ul>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
